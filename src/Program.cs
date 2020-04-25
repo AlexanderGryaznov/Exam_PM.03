@@ -35,19 +35,34 @@ namespace src
                     Smartphone TempPhones = new Smartphone();
                     Console.WriteLine("Марка:");
                     TempPhones.Brand = Console.ReadLine();
+                    if(TempPhones.Brand == "")
+                    {
+                        Console.WriteLine("Вы ничего не ввели!");
+                        return;
+                    }
 
                     Console.WriteLine("Модель:");
                     TempPhones.Model = Console.ReadLine();
+                    if (TempPhones.Model == "")
+                    {
+                        Console.WriteLine("Вы ничего не ввели!");
+                        return;
+                    }
 
                     Console.WriteLine("Цена:");
                     TempPhones.Price = Convert.ToDouble(Console.ReadLine());
+                    if (TempPhones.Price == 0)
+                    {
+                        Console.WriteLine("Неправильный ввод!");
+                        return;
+                    }
 
                     Phones.Add(TempPhones);
                 }
             }
             catch (Exception)
             {
-                Console.WriteLine("Вы ввели не число!");
+                Console.WriteLine("Неправильный ввод!");
             }
         }
         private static void sorting()
