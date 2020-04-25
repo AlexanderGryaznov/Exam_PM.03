@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace src
 {
+    /*
+     ПРОГРАММА ОРГАНИЗОВАННА ЧЕРЕЗ List, 
+     Т.К. ОН ТОЖЕ ЯВЛЯЕТСЯ МАССИВОМ ЗНАЧЕНИЙ 
+     */
     class Program
     {
         static public int N;
