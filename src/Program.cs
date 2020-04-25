@@ -13,6 +13,7 @@ namespace src
         static void Main(string[] args)
         {
             Array();
+            sorting();
             Console.ReadKey();
         }
 
@@ -35,6 +36,10 @@ namespace src
 
                 Phones.Add(TempPhones);
                 }
+        }
+        private static void sorting()
+        {
+            Phones.OrderBy(r => r.Brand).ThenBy(r => r.Price).ToArray();
         }
     }
 }
